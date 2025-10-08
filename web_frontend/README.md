@@ -11,6 +11,18 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 ## Getting Started
 
+Create a `.env` file (see `.env.example`) and configure Supabase Auth:
+
+Required variables:
+- `REACT_APP_USE_SUPABASE_AUTH` — set to `true` to enable Supabase in the frontend
+- `REACT_APP_SUPABASE_URL` — your Supabase project URL
+- `REACT_APP_SUPABASE_ANON_KEY` — your Supabase anon key
+- Optional:
+  - `REACT_APP_API_BASE_URL` — Base URL for backend API (default: relative)
+  - `REACT_APP_WS_BASE_URL` — Base URL for WebSocket (default: relative)
+  - `REACT_APP_STORAGE_BUCKET` — Storage bucket name (default: uploads)
+  - `REACT_APP_SITE_URL` — Used for sign-up email redirect (defaults to window.location.origin)
+
 In the project directory, you can run:
 
 ### `npm start`
